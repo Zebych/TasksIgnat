@@ -1,0 +1,82 @@
+.message{
+    display: flex;
+    align-items: flex-end;
+
+    margin: 10px;
+
+}
+.avatar{
+    height: 50px;
+    width: 50px;
+
+    border-radius: 50%;
+}
+.content{
+    padding: 10px;
+
+    border-radius: 5px 5px 5px 0;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.angle{
+    width: 15px;
+    height: 15px;
+    background: radial-gradient(circle at 0 0,rgba(0,0,0,0)15px,rgba(255,255,255,0.3)0);
+}
+.text{
+    min-width: 150px;
+    max-width: 300px;
+    word-wrap: break-word;
+}
+.none{
+    font-size: 20px;
+    font-weight: bold;
+    color: #bbffbb;
+}
+.time{
+    display: flex;
+    justify-content: flex-end;
+
+    color: #bbffbb;
+}
+
+/*
+.messages {
+    display: grid;
+    grid-template-rows: 100px 2fr;
+    grid-template-columns: 3fr 10fr;
+
+    width: 400px;
+    background-color: darkkhaki;
+}
+
+.ava img {
+    display: block;
+    margin-top: 40px;
+    width: 50px;
+    border-radius: 25px;
+}
+
+.boxMessage {
+    background-color: black;
+    margin: 15px;
+    border-radius: 15px 15px 15px 0px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    display: flex;
+    align-content: flex-start;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.flexMessage {
+    display: flex;
+    justify-content: space-between;
+    color: antiquewhite;
+}
+
+.name {
+    color: blueviolet;
+}
+
+*/
