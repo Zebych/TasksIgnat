@@ -2,19 +2,19 @@ import React, {ChangeEvent, KeyboardEvent} from 'react'
 import s from './Greeting.module.css'
 
 type GreetingPropsType = {
-    name: string // need to fix any
-    setNameCallback: (event: ChangeEvent<HTMLInputElement>) => void // need to fix any
-    addUser: () => void // need to fix any
-    error: string // need to fix any
-    totalUsers: number // need to fix any
+    name: string
+    setNameCallback: (event: ChangeEvent<HTMLInputElement>) => void
+    addUser: () => void
+    error: string
+    totalUsers: number
     onEnter: (e: KeyboardEvent<HTMLInputElement>) => void
 }
 
 // презентационная компонента (для верстальщика)
 const Greeting: React.FC<GreetingPropsType> = (
-    {name, setNameCallback, addUser, onEnter, error, totalUsers} // деструктуризация пропсов
+    {name, setNameCallback, addUser, onEnter, error, totalUsers}
 ) => {
-    const inputClass = error ? s.error : s.input// need to fix with (?:)-доп задача проверки на ошибку, если ошибка еть в инпут давать
+    const inputClass = error ? s.error : s.input
 
     return (
         <div className={s.greeteng}>
@@ -28,7 +28,6 @@ const Greeting: React.FC<GreetingPropsType> = (
             </div>
             <button onClick={addUser} className={s.button} disabled={!name}>add</button>
             <div className={s.count}>{totalUsers}</div>
-            <div><a href="https://www.youtube.com/watch?v=5sb6r6SkaQU">video</a></div>
 
         </div>
     )

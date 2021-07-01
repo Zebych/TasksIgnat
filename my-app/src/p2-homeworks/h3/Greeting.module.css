@@ -6,12 +6,12 @@
     color: red;
     height: 21px; /* занят участок для высвечивания ошибки-чтоб не дергалось все снизу при выводе ошибки*/
     margin-left: 10px;
-    /*    border: 1px solid red;*/
+
 }
 
 .greeting {
     display: flex;
-    align-items: flex-start; /*чтобы все элементы были прибиты  к верху*/
+    align-items: flex-start;
 }
 
 .input {
@@ -32,7 +32,7 @@
     color: #99ff99;
 
     border: 2px solid red;
-    outline: none; /* наружный border*/
+    outline: none;
 }
 
 .button {

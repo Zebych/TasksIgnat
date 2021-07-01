@@ -20,7 +20,6 @@ const Message: React.FC<MessageType> = (props) => {
                 <div className={s.text}>{props.message}</div>
                 <div className={s.time}>{props.time}</div>
             </div>
-            <div><a href="https://www.youtube.com/watch?v=xzL2uWcmblU">video</a></div>
         </div>
     )
 }
