@@ -8,7 +8,7 @@ import TemporaryDrawer from "../component/HiddenPanel";
 function JuniorPlus() {
     return (
         <div>
-   Junior Plus
+     Junior
         </div>
     )
 }
