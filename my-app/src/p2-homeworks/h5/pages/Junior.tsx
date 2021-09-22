@@ -4,11 +4,12 @@ import HW2 from '../../h2/HW2'
 import HW3 from '../../h3/HW3'
 import HW4 from '../../h4/HW4'
 import TemporaryDrawer from "../component/HiddenPanel";
+import HW6 from "../../h6/HW6";
 
 function JuniorPlus() {
     return (
         <div>
-     Junior
+            <HW6/>
         </div>
     )
 }
