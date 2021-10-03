@@ -18,13 +18,13 @@ const useStyles = makeStyles({
     },
 });
 
-type Anchor = 'top' | 'menu' | 'bottom' | 'right';
+type Anchor = 'top' | 'left' | 'bottom' | 'right';
 
 export default function TemporaryDrawer() {
     const classes = useStyles();
     const [state, setState] = React.useState({
         top: false,
-        menu: false,
+        left: false,
         bottom: false,
         right: false,
     });
@@ -67,7 +67,7 @@ export default function TemporaryDrawer() {
 
     return (
         <div>
-            {(['menu', 'right', 'top', 'bottom'] as Anchor[]).map((anchor) => (
+            {(['left', 'right', 'top', 'bottom'] as Anchor[]).map((anchor) => (
                 <React.Fragment key={anchor}>
                     <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
                     <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
