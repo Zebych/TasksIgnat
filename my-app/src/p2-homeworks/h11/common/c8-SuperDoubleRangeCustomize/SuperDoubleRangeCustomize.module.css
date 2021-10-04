@@ -1,0 +1,24 @@
+.container{
+    position: relative;
+    pointer-events: none;
+}
+
+.container input[type="range"]{
+    height: 2em;
+    display: block;
+    margin: 0;
+}
+
+.container input[type="range"]:last-child{
+    margin-top: -2em;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    pointer-events: all;
+}
+input[type="range"]::-moz-range-thumb {
+    pointer-events: all;
+}
+input[type="range"]::-ms-thumb {
+    pointer-events: all;
+}
