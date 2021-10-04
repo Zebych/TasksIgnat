@@ -6,15 +6,16 @@ import HW4 from '../../h4/HW4'
 import TemporaryDrawer from "../component/HiddenPanel";
 import HW6 from "../../h6/HW6";
 
-function JuniorPlus() {
+function Junior() {
     return (
         <div>
             <HW6/>
+            Junior
         </div>
     )
 }
 
-export default JuniorPlus
+export default Junior
 
 // сделайте по аналогии пустые страницы джун и джун+
 // туда будут добавляться следующие дз

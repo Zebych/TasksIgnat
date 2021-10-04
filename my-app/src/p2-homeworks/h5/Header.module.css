@@ -1,0 +1,30 @@
+.link{
+    text-decoration: none;
+    color: blue;
+    margin: 10px;
+}
+.link:hover{
+    color: chartreuse;
+}
+.active{
+    color: #bbffbb;
+}
+.block{
+    width: 21px;
+    height: 21px;
+
+    margin: 10px;
+
+    background: cadetblue;
+}
+.header{
+    display: flex;
+    width: 280px;
+
+    transition-duration: 500ms;/*время всплытия окна*/
+    transform: translate(-220px);/* где отобразить*/
+}
+.header:hover{
+    transition-duration: 500ms;
+    transform: translate(0);
+}
