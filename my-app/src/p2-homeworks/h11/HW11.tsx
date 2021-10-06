@@ -11,6 +11,11 @@ function HW11() {
     useEffect(() => {
         handleChangeDouble([value1, value])
     }, [value1])
+    useEffect(() => {
+        if(value1===value){
+            setValue(value1)
+        }
+    }, [value])
 
     let valueRange = [value1, value]
 

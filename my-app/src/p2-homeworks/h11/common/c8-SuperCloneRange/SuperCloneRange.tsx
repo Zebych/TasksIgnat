@@ -14,7 +14,6 @@ const SuperCloneRange: React.FC<SuperDoubleRangePropsType> = (
         // min, max, step, disable, ...
     }
 ) => {
-    // сделать самому, можно подключать библиотеки
     const onChangeCallback = (e: ChangeEvent<HTMLInputElement>) => {
         onChange && onChange(e) // сохраняем старую функциональность
 
