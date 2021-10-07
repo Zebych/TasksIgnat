@@ -3,6 +3,7 @@ import {ThemesType} from "../HW12";
 type InitStateType={
     theme:string
 }
+const THEMES='THEMES'
 const initState:InitStateType = {
     theme:'dark',
 };
@@ -11,6 +12,9 @@ export const themeReducer = (state = initState, action: ActionType): InitStateTy
     switch (action.type) {
         case "THEMES": {
             return {...state,theme:action.theme};
+        }
+        case 'ZALUPA':{
+            return {...state}
         }
         default: return state;
     }

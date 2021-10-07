@@ -7,6 +7,7 @@ const theme = createTheme({
         MuiSlider: {
             root: {
                 width: "130px",
+                margin: "10px",
                 color: "#0075ff",
             },
             rail: {

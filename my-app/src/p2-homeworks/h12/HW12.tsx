@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useCallback} from "react";
 import s from "./HW12.module.css";
 import {useDispatch, useSelector} from "react-redux";
 import {AppStoreType} from "../h10/bll/store";
@@ -10,19 +10,14 @@ export type ThemesType = 'dark' | 'red' | 'some'
 const themes = ['dark', 'red', 'some'];
 
 function HW12() {
-    const [valueThemes, setValueThemes] = useState(themes[0])
     const dispatch = useDispatch()
-    const isTheme = useSelector<AppStoreType>(state => state.theme.theme)
-    const theme = valueThemes; // useSelector
+    const theme = useSelector<AppStoreType,string>(state => state.theme.theme)
 
-    // useDispatch, onChangeCallback
-    const onChangeCallback = (option: ThemesType) => {
-        setValueThemes(option)
+    const onChangeCallback = useCallback(function (option: ThemesType) {
+        console.log(option)
         dispatch(changeThemeC(option))
-    }
-    console.log(isTheme)
-    console.log(theme)
-    console.log(valueThemes)
+    }, [])
+
     return (
         <div className={s[theme]}>
             <hr/>
@@ -30,7 +25,7 @@ function HW12() {
                 <SuperRadio
                     name={'radio'}
                     options={themes}
-                    value={valueThemes}
+                    value={theme}
                     onChangeOption={onChangeCallback}
                 />
                 homeworks 12
