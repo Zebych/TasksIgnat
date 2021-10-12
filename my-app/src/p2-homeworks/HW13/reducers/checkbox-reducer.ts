@@ -31,5 +31,5 @@ export const checkAPITC = (onChangeCheckbox: boolean) => (dispatch: Dispatch) =>
     api.putCheckbox(onChangeCheckbox).then((res) => {
         dispatch(checkboxC(res.data.success))
     })
-        .catch((error) => dispatch(errorStatus(error.response ? error.response.data.error : error.message)))
+        .catch((error) => dispatch(errorStatus(error.response ? error.response.data.errorText : error.message)))
 }

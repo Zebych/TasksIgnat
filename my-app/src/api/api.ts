@@ -9,6 +9,6 @@ type CheckboxType = {
 //api
 export const api = {
     putCheckbox(onChangeCheckbox: boolean) {
-        return instance.put<CheckboxType>('/auth/test', {success: onChangeCheckbox});
+        return instance.post<CheckboxType>('/auth/test', {success: onChangeCheckbox});
     },
 }
